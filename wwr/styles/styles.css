@@ -1,0 +1,101 @@
+/* Fonts and Colors */
+:root {
+    --primary-color: rgb(142, 202, 230);
+    --secondary-color: rgb(255, 183, 3);
+    --background-color: rgb(33, 158, 188);
+    --text-color: rgb(2, 48, 71);
+  }
+  
+  body {
+    font-family: "Merriweather", serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+  }
+  
+  .logo {
+    max-height: 50px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  nav a {
+    margin: 0 1rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    
+  }
+  
+  .hero-img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  
+  .hero h1 {
+    font-family:"Lacquer", serif;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--secondary-color);
+  }
+  
+  .hero article {
+    position: absolute;
+    bottom: 40%;
+    left: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .client-img {
+    float: right;
+    max-width: 100px;
+    margin-left: 1rem;
+  }
+  
+  /* Sections */
+  section {
+    padding: 2rem;
+  }
+  
+  section img {
+    width: 18%;
+    margin: 0.5%;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  footer a img {
+    width: 30px;
+    margin: 0 0.5rem;
+  }
+  
