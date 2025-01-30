@@ -1,110 +1,128 @@
 /* Fonts and Colors */
 :root {
-    --primary-color: rgb(142, 202, 230);
-    --secondary-color: rgb(255, 183, 3);
-    --background-color: rgb(33, 158, 188);
-    --text-color: rgb(2, 48, 71);
-  }
-  
-  body {
-    font-family: "Merriweather", serif;
-    margin: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
-  /* Header */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--primary-color);
-  }
-  
-  .logo {
-    max-height: 50px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: var(--text-color);
-  }
-  
-  nav a {
-    margin: 0 1rem;
-  }
-  
-  /* Hero Section */
-  .hero {
-    position: relative;
-    text-align: center;
-    color: white;
-    
-  }
-  
-  .hero-img {
-    width: 100%;
-    display: block;
-    height: auto;
-  }
-  
-  .hero h1 {
-    font-family:"Lacquer", serif;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    color: var(--secondary-color);
-  }
-  
-  .hero article {
-    position: absolute;
-    bottom: 40%;
-    left: 25%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1rem;
-    border-radius: 8px;
-  }
-  
-  .client-img {
-    float: right;
-    max-width: 100px;
-    margin-left: 1rem;
-  }
-  .history {
-    padding: 2em;
+  --primary-color: rgb(142, 202, 230);
+  --secondary-color: rgb(255, 183, 3);
+  --background-color: rgb(33, 158, 188);
+  --text-color: rgb(2, 48, 71);
 }
 
-  .adventures {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1em;
-    padding: 2em;
+body {
+  font-family: "Merriweather", serif;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-  .adventures figure {
-    text-align: center;
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
 }
 
-  .adventures img {
-    max-width: 100%;
-    border-radius: 8px;
+.logo {
+  max-height: 50px;
 }
 
-  /* Footer */
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-  }
-  
-  footer a img {
-    width: 30px;
-    margin: 0 0.5rem;
-  }
-  
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.hero h1 {
+  font-family: "Lacquer", serif;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: var(--secondary-color);
+}
+
+.hero article {
+  position: absolute;
+  bottom: 40%;
+  left: 25%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.client-img {
+  float: right;
+  max-width: 100px;
+  margin-left: 1rem;
+}
+
+/* History Section */
+.history {
+  padding: 2em;
+  text-align: center;
+}
+
+/* Adventures Section */
+.adventures {
+  padding: 2em;
+  text-align: center;
+}
+
+.adventures-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+}
+
+.adventures figure {
+  text-align: center;
+}
+
+.adventures img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+footer a img {
+  width: 30px;
+}
